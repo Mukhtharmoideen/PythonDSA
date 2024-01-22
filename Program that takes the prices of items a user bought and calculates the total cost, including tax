@@ -1,0 +1,19 @@
+# Taking the input as price 
+price_of_items = input('Enter the prices: ')
+
+# Using list comprehension to convert the string to float and creating a list
+floated = [float(items) for items in price_of_items.split(',')]
+
+# Initializing sum of given prices
+sum_of_price = 0
+
+# Looping to get the sum of given prices
+for i in floated:
+    sum_of_price += i
+    
+# Finding tax
+tax = sum_of_price * 8/100
+
+# Adding tax amount to bill
+Total_bill = sum_of_price + tax
+print(f'Total bill is: {Total_bill}')
