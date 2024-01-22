@@ -1,3 +1,4 @@
+# Prime checking if not prime it will print factors of the number.
 def prime_check(n):
     if n <= 1:
         return False
