@@ -1,0 +1,12 @@
+def odd(low, high):
+    odd_numbers = []
+    for i in range(low, high + 1):
+        if i % 2 != 0:
+            odd_numbers.append(i)
+
+    print(len(odd_numbers))
+
+
+low = int(input('Enter the lowest number: '))
+high = int(input('Enter the highest number: '))
+odd(low, high)
